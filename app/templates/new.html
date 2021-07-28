@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/hurricanes/new" method="POST">
+    <div class="row">
+        <div class="col">
+            <label for="fldMonth">month</label>
+            <input id="fldMonth" type="text" class="form-control" placeholder="fldMonth" name="fldMonth">
+        </div>
+        <div class="col">
+            <label for="fldAvg">MonthAvg</label>
+            <input id="fldAvg" type="text" class="form-control" placeholder="Average"
+                   name="fldAvg">
+        </div>
+        <div class="col">
+            <label for="fld2005">2005</label>
+            <input id="fld2005" type="text" class="form-control" placeholder="fld2005" name="fld2005">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="fld2006">2006</label>
+            <input id="fld2006" type="text" class="form-control" placeholder="fld2006" name="fld2006">
+        </div>
+        <div class="col">
+            <label for="fld2007">2007</label>
+            <input id="fld2007" type="text" class="form-control" placeholder="fld2007" name="fld2007">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="fld2008">2008</label>
+
+            <input id="fld2008" type="text" class="form-control" placeholder="fld2008"
+                   name="fld2008">
+        </div>
+        <div class="col">
+            <label for="fld2009">2009</label>
+            <input id="fld2009" type="text" class="form-control" placeholder="fld2009" name="fld2009">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="fld2010">2010</label>
+
+            <input id="fld2010" type="text" class="form-control" placeholder="fld2010"
+                   name="fld2010">
+        </div>
+        <div class="col">
+            <label for="fld2011">2011</label>
+            <input id="fld2011" type="text" class="form-control" placeholder="fld2010" name="fld2011">
+        </div>
+    </div>
+        <div class="row">
+        <div class="col">
+            <label for="fld2012">2012</label>
+
+            <input id="fld2012" type="text" class="form-control" placeholder="fld2012"
+                   name="fld2012">
+        </div>
+        <div class="col">
+            <label for="fld2013">2013</label>
+            <input id="fld2013" type="text" class="form-control" placeholder="fld2013" name="fld2013">
+        </div>
+    </div>
+        </div>
+        <div class="row">
+        <div class="col">
+            <label for="fld2014">2014</label>
+
+            <input id="fld2014" type="text" class="form-control" placeholder="fld2014"
+                   name="fld2014">
+        </div>
+        <div class="col">
+            <label for="fld2015">2015</label>
+            <input id="fld2015" type="text" class="form-control" placeholder="fld2015" name="fld2015">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Success</button>
+
+</form>
+
+{% endblock %}
+

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="card" class="m-5 p-2">
+   <div class="card" class="m-5 p-2">
+    <h5 class="card-title">{{ month.fldMonth}}</h5>
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{ month.fldAvg}}</li>
+        <li class="list-group-item">{{ month.fld2005 }}</li>
+        <li class="list-group-item">{{ month.fld2006 }}</li>
+        <li class="list-group-item">{{ month.fld2007 }}</li>
+        <li class="list-group-item">{{ month.fld2008 }}</li>
+	<li class="list-group-item">{{ month.fld2009 }}</li>
+	<li class="list-group-item">{{ month.fld2010 }}</li>
+	<li class="list-group-item">{{ month.fld2011 }}</li>
+	<li class="list-group-item">{{ month.fld2012 }}</li>
+	<li class="list-group-item">{{ month.fld2013 }}</li>
+	<li class="list-group-item">{{ month.fld2014 }}</li>
+	<!--<li class="list-group-item">{{ month.fld2015 }}</li>-->
+    </ul>
+    <div class="card-body">
+         <a href="/edit/{{month.id}}" class="card-link btn btn-primary">edit</a>
+    </div>
+</div>
+<form action="/delete/{{month.id}}" method="post"><button type="submit" class="btn btn-danger">delete</button></form>
+
+{% endblock %}

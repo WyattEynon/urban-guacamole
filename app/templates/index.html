@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block content %}
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Month</th>
+        <th scope="col">Avg</th>
+        <th scope="col">2005</th>
+        <th scope="col">2006</th>
+        <th scope="col">2007</th>
+        <th scope="col">2008</th>
+        <th scope="col">2009</th>
+        <th scope="col">2010</th>
+        <th scope="col">2011</th>
+        <th scope="col">2012</th>
+        <th scope="col">2013</th>
+        <th scope="col">2014</th>
+        <th scope="col">2015</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for month in hurricanes %}
+    <tr>
+        <td><a href="view/{{month.id}}">{{month.fldMonth }}</a></td>
+        <td>{{ month.fldAvg }}</td>
+        <td>{{ month.fld2005 }}</td>
+        <td>{{ month.fld2006 }}</td>
+        <td>{{ month.fld2007 }}</td>
+        <td>{{ month.fld2008 }}</td>
+        <td>{{ month.fld2010 }}</td>
+        <td>{{ month.fld2011 }}</td>
+        <td>{{ month.fld2012 }}</td>
+        <td>{{ month.fld2013 }}</td>
+        <td>{{ month.fld2014 }}</td>
+        <td>{{ month.fld2015 }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
